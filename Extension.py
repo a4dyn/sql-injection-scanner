@@ -81,7 +81,7 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, ITab, IExtensionStateList
         self._helpers = callbacks.getHelpers()
 
         # Set the extension name that shows in the burp extension menu
-        callbacks.setExtensionName("AutoRepeater")
+        callbacks.setExtensionName("InjectionScanner")
 
         # Create the log and a lock on which to synchronize when adding log entries
         self._log = ArrayList()
@@ -220,7 +220,7 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, ITab, IExtensionStateList
     ITab implementation
     '''
     def getTabCaption(self):
-        return 'AutoRepeater'
+        return 'InjectionScanner'
 
     def getUiComponent(self):
         return self._mainSplitpane
@@ -236,7 +236,7 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, ITab, IExtensionStateList
 
         # Message viewer request will show menu item if selected by the user
         if ctx == 0 or ctx == 2:
-          menu.append(swing.JMenuItem("Send to AutoRepeater", None, actionPerformed=lambda x, inv=invocation: self.sendToExtender(inv)))
+          menu.append(swing.JMenuItem("Send to InjectionScanner", None, actionPerformed=lambda x, inv=invocation: self.sendToExtender(inv)))
 
         return menu if menu else None
 
@@ -322,7 +322,7 @@ class BurpExtender(IBurpExtender, IContextMenuFactory, ITab, IExtensionStateList
                 return re.sub('^Content-Length\:\s+', '', header, re.IGNORECASE)
 
     '''
-    When the user select 'Send to AutoRepeater', call this function
+    When the user select 'Send to InjectionScanner', call this function
     '''
     def sendToExtender(self, invocation):
 
