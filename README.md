@@ -37,5 +37,5 @@ The extension will automatically fetch the data and variables within the URL/dat
 **Clear Log:**
 * Clear the log panel (upper right panel).
 
-### Others
+## Others
 * Abnormal content length will be printed to std-out.
