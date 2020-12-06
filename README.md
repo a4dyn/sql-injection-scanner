@@ -8,8 +8,7 @@ The extension will automatically fetch the data and variables within the URL/dat
 
 ![](pic/IMG2.png)
 
-## Usage
-### UIs
+## UIs
 
 **Upper Left Panel:** 
 * Fetched data will be shown here for users to customize, including data, User-Agent, URL, etc.
@@ -20,7 +19,7 @@ The extension will automatically fetch the data and variables within the URL/dat
 **Lower Panel:**
 * Showes the detail of selected log.
 
-### Buttons
+## Buttons
 
 **Set Basis:**
 * Set the currently selected log's content-length to the basis, usually the default content-length.
