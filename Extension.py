@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 
 '''
-A Burp Extension for SQL injection attack. Supports GET and POST with key-value, Json and XML data type
+A Burp Extension for finding simple SQL exploitable. Supports GET and POST with key-value of urlencoded, Json and XML data types
+
 
 * Created by Junhan Duan on August 25th, 2020
 * First version completed on Spetember 10th, 2020

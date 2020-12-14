@@ -1,5 +1,5 @@
 # InjectionScanner
-A Burp Extension for finding simple SQL exploitable. Supports GET and POST with key-value, Json and XML data type.
+A Burp Extension for finding simple SQL exploitable. Supports GET and POST with key-value of urlencoded, Json and XML data types.
 
 The extension will automatically fetch the data and variables within the URL/data section for users to customize.
 
